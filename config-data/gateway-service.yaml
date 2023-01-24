@@ -41,35 +41,4 @@ spring:
           uri: lb://file-service
           predicates:
             - Path=/file/**         
-        - id: process-service
-          uri: lb://process-service
-          predicates:
-            - Path=/category/**,/document-stage/**,/stages-process/**,/form/**,/bussines-process/**,/process-relations/**,/subCategory/**,/process-signatories/**
-        - id: correlatives-service
-          uri: lb://correlatives-service
-          predicates:
-            - Path=/correlative/**
-        - id: users-service
-          uri: lb://users-service
-          predicates:
-            - Path=/usersBPM/**
-        - id: cases-service
-          uri: lb://cases-service
-          predicates:
-            - Path=/deadline/**,/cases-manager/**,/associated-cases/**,/signatories-case/**
-        - id: cases-details-service
-          uri: lb://cases-details-service
-          predicates:
-            - Path=/case-document/**,/case-datails/**,/activity-historials/**,/signatories-document/**      
-        - id: cas-service
-          uri: lb://cas-service
-          predicates:
-            - Path=/payment-decrees/**   
-        - id: document-template-service
-          uri: lb://document-template-service
-          predicates:
-            - Path=/dpd-template/**,/dom-template/**,/rentas-template/**    
-        - id: alert-service
-          uri: lb://alert-service
-          predicates:
-            - Path=/alerts/**
+
