@@ -40,5 +40,17 @@ spring:
         - id: file-service
           uri: lb://file-service
           predicates:
-            - Path=/file/**         
+            - Path=/file/**
+        - id: officers
+          uri: lb://officers
+          predicates:
+            - Path=/officers/**
+        - id: users
+          uri: lb://users
+          predicates:
+            - Path=/users/** 
+        - id: cas-service
+          uri: lb://cas-service
+          predicates:
+            - Path=/payment-decrees/**    
 
