@@ -41,17 +41,19 @@ spring:
           uri: lb://file-service
           predicates:
             - Path=/file/**
-        - id: officers
-          uri: lb://officers
-          predicates:
-            - Path=/officers/**
-        - id: users
-          uri: lb://users
-          predicates:
-            - Path=/users/** 
         - id: cas-service
           uri: lb://cas-service
           predicates:
             - Path=/payment-decrees/**
-       
-
+        - id: alert-service
+          uri: lb://alert-service
+          predicates:
+            - Path=/alerts/**
+        - id: correlatives-service
+          uri: lb://correlatives-service
+          predicates:
+            - Path=/correlative/**
+        - id: document-template-service
+          uri: lb://document-template-service
+          predicates:
+            - Path=/dpd-template/**
