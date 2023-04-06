@@ -53,8 +53,6 @@ spring:
           uri: lb://correlatives-service
           predicates:
             - Path=/correlative/**
-          predicates:
-            - Path=/officers/**
         - id: document-template-service
           uri: lb://document-template-service
           predicates:
