@@ -44,7 +44,7 @@ spring:
         - id: cas-service
           uri: lb://cas-service
           predicates:
-            - Path=/payment-decrees/**
+            - Path=/payment-decrees/**,/projects/**,/honorary-projects/**,/officer-honorary/** 
         - id: alert-service
           uri: lb://alert-service
           predicates:
