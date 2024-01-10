@@ -60,4 +60,4 @@ spring:
         - id: log-aplications-service
           uri: lb://log-aplications-service
           predicates:
-            - Path=/cu-access-log/**,/fgob-access-log/**
+            - Path=/cu-access-log/**,/fgob-access-log/**,/app-access-log/**
