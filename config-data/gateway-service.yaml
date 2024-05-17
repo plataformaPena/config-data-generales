@@ -61,3 +61,7 @@ spring:
           uri: lb://log-aplications-service
           predicates:
             - Path=/cu-access-log/**,/fdigital-access-log/**,/app-access-log/**
+        - id: commons-service
+          uri: lb://commons-service
+          predicates:
+            - Path=/geo-commune/**,/geo-street/**
