@@ -56,7 +56,7 @@ spring:
         - id: document-template-service
           uri: lb://document-template-service
           predicates:
-            - Path=/dpd-template/**,/dom-template/**,/rentas-template/**,/qualifications-template/**,/sch-template/**,/contracts-template/**,/memos-template/**,/test/**,/decree-template/**
+            - Path=/dpd-template/**,/dom-template/**,/rentas-template/**,/qualifications-template/**,/sch-template/**,/contracts-template/**,/memos-template/**,/test/**,/decree-template/**,/daf-template/**,/generic-template/**
         - id: log-aplications-service
           uri: lb://log-aplications-service
           predicates:
